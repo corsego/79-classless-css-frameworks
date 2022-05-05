@@ -1,0 +1,12 @@
+<header>
+  <h1>
+    Superails
+  </h1>
+  <nav>
+    <%= link_to_unless_current :posts.capitalize, posts_path %>
+    <%= link_to_unless_current :home.capitalize, static_pages_home_path %>
+    <%= link_to_unless_current :pricing.capitalize, static_pages_pricing_path %>
+    <%= link_to_unless_current :terms.capitalize, static_pages_terms_path %>
+    <%= link_to_unless_current :privacy.capitalize, static_pages_privacy_path %>
+  </nav>
+</header>
